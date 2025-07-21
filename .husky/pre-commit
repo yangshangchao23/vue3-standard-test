@@ -1,8 +1,1 @@
-# 执行代码检查
-npx eslint . && npx stylelint "**/*.{css,scss,vue}"
-
-# 如果检查失败，阻止提交
-if [ $? -ne 0 ]; then
-  echo "代码检查失败，请手动修复错误后再提交！"
-  exit 1
-fi
+npx lint-staged
