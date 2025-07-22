@@ -1,0 +1,48 @@
+// 编辑器配置
+{
+  // 启用自动格式化
+  "editor.formatOnSave": true,
+
+  // 关闭默认的配置--我们这里默认不开启prettier格式化
+  // "prettier.enable": false,
+
+  // 指定默认的格式化工具为 Prettier
+  // "[vue]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"  // 使用 Prettier 作为格式化工具 -- <img>会变成 <img />
+  // },
+  // "[html]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[css]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+
+  // 指定默认的格式化工具为 eslint
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint" // 使用 ESLint 作为格式化工具 -- <img>才不会变成 <img />
+  },
+  "[html]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+
+  // Prettier相关配置
+  // 尽量不要在该文件中配置Prettier，只配置是否开启prettier格式化。
+  // 如果需要其他详细配置Prettier，请使用.prettierrc文件 [项目级配置]
+  // 因为在这里进行编辑器级别配置，这里的配置优先级最高。会导致.prettierrc文件（项目级）配置无效。造成混淆！
+  // "prettier.endOfLine": "lf" // 统一换行符为LF（适用于跨平台开发）
+
+  // VS Code 编辑器统一换行符
+  "files.eol": "\n"
+}
